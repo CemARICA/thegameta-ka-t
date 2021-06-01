@@ -7,27 +7,27 @@ print("Taş, Kağıt, Makas oyununa hoş geldiniz.. \n")
 def button1():
     bilgisayar = random.choice(thegame)
     if bilgisayar==tas:
-            print("Bilgisyar taş seçti: Berabere Kaldın Buda benden Olsun : https://www.youtube.com/watch?v=OaohP-rJMS4")
+            print("Bilgisyar taş seçti: Berabere")
     elif bilgisayar==kagit:
-            print("Bilgisyar kağıt seçti: Kaybettin Cezasını Çek: https://www.youtube.com/watch?v=GDNAzQGzqZc")
+            print("Bilgisyar kağıt seçti: Kaybettin")
     else:
-            print("Bilgisyar makas seçti: Tebrikler Kazandın: https://www.youtube.com/watch?v=rdDiWh40QT0")
+            print("Bilgisyar makas seçti: Kazandın")
 def button2():
     bilgisayar = random.choice(thegame)
     if bilgisayar==kagit:
-            print("Bilgisayar kağıt seçti: Berabere, Nasıl kazanamayız yaa: https://www.youtube.com/watch?v=HB_GnnhNz-8")
+            print("Bilgisayar kağıt seçti: Berabere")
     elif bilgisayar==makas:
-            print("Bilgisayar makas seçti: Kaybettin: https://www.youtube.com/watch?v=PIwQX7mdGEU")
+            print("Bilgisayar makas seçti: Kaybettin")
     else:
-            print("Bilgisayar taş seçti: Kazandın: https://www.youtube.com/watch?v=Zuq8w8j235I&list")
+            print("Bilgisayar taş seçti: Kazandın")
 def button3():
     bilgisayar = random.choice(thegame)
     if bilgisayar==makas:
-            print("Bilgisayar makas seçti: Berabere: https://www.youtube.com/watch?v=KI6AwO7bhJ8")
+            print("Bilgisayar makas seçti: Berabere")
     elif bilgisayar==tas:
-            print("Bilgisayar taş seçti: Kaybettin: https://www.youtube.com/watch?v=ZZIriG4iSX0")
+            print("Bilgisayar taş seçti: Kaybettin")
     else:
-            print("Bilgisayar kağıt seçti: Kazandın: https://www.youtube.com/watch?v=jPCJIB1f7jk")
+            print("Bilgisayar kağıt seçti: Kazandın")
 dispatch_dictioanary = { "Taş": button1, "Kağıt": button2, "Makas": button3 }
 layout = [ [psg.Button("Taş"), psg.Button("Kağıt"), psg.Button("Makas"), psg.Quit()] ]
 window = psg.Window("forTeam", layout, size=(250,150))
